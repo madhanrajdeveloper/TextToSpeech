@@ -9,7 +9,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://your-app-name.netlify.app"], # Update this to your netlify URL
+    allow_origins=["https://tts-webapplication.netlify.app/"], # Update this to your netlify URL
     allow_methods=["*"],
     allow_headers=["*"],
 )
