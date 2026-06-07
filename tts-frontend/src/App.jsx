@@ -8,7 +8,7 @@ export default function App() {
   const handleGenerate = async () => {
     setLoading(true);
     try {
-      // This will pull from your .env file or your Netlify Environment settings
+      // Ensure VITE_API_BASE_URL does not have a trailing slash
       const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/synthesize`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
