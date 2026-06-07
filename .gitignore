@@ -1,0 +1,14 @@
+# Python (Backend)
+tts-backend/venv/
+tts-backend/__pycache__/
+tts-backend/*.mp3
+tts-backend/.env
+
+# Node (Frontend)
+tts-frontend/node_modules/
+tts-frontend/dist/
+tts-frontend/.env
+
+# OS/System
+.DS_Store
+.vscode/
