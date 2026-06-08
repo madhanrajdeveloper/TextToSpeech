@@ -31,7 +31,7 @@ async def synthesize(request: Request, background_tasks: BackgroundTasks):
     file_id = str(uuid.uuid4())
     output_file = f"temp_{file_id}.mp3"
 
-    communicate = edge_tts.Communicate(text, "en-US-AndrewNeural")
+    communicate = edge_tts.Communicate(text, "en-US-Andrew")
     await communicate.save(output_file)
 
     background_tasks.add_task(remove_file, output_file)
